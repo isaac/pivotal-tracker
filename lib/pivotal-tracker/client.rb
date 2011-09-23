@@ -22,7 +22,7 @@ module PivotalTracker
 
       # this is your connection for the entire module
       def connection(options={})
-        raise NoToken unless @token.present?
+        raise NoToken unless @token
         
         @connections ||= {}
         
